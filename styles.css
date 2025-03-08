@@ -1,0 +1,130 @@
+.tot{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    position: absolute;
+    
+}
+.headtitle{
+    text-align: center;
+    background-color: rgba(253,187,45,1);
+    position: relative;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    margin: 50px;
+    top: 100px;
+    gap: 20px; /* Adjust the spacing between elements as needed */
+    position: absolute;
+    padding: 20px;
+   
+}
+
+.booktitled{
+    width: 30%;
+    left: 50px;
+    top: 150px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 5%;
+    opacity: 0.85;
+    padding: 3px;
+    display: none;
+}
+.booktitled h2{
+    text-align: center;
+}
+.booktitled h3 {
+    margin-left: 260px;
+}
+.close{
+    background-color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+.show{
+    background-color: #59c09e;
+    border-radius: 10px;
+    left: 15px;
+    height: 25px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.addpopup {
+    position: fixed; /* Changed from absolute to fixed */
+    color: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 60px;
+    font-size: 40px;
+    background-color: #59c09e;
+    bottom: 20px; /* Changed from margin-top to bottom for better control */
+    right: 20px;  /* Changed from left to right for better control */
+}
+.newpopupcont{
+    background-color: black;
+    position: fixed;
+    margin: 0%;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+.newpopup{
+    position: absolute;
+    margin-top: 10%;
+    right: 35%;
+    height: 250px;
+    width: 500px;
+    background: rgba(253,187,45,1);
+    padding: 5px;
+    border-color: #59c09e;
+    border: 30px;
+    border-radius: 5%;
+    z-index: 2;
+    display: none;
+}
+.newpopup h1{
+    text-align: center;
+}
+.hrr{
+    background-color:transparent;
+    height: 1.5px;
+    border-color: black;
+}
+.newpopup input{
+    -webkit-text-fill-color: black;
+    border-color: black;
+    width: 95%;
+    padding: 7px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid black;
+    font-size:medium ;
+    background: transparent;
+}
+.newpopup textarea{
+    -webkit-text-fill-color: black;
+    border-color: black;
+    width: 95%;
+    padding: 7px;
+    border: solid black;
+    margin-top: 4px;
+    font-size:16px ;
+    background: transparent;
+}
+.cancel{
+    margin-top: 5px;
+    margin-left: 1%;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.addd{
+    margin-left: 1%;
+    border-radius: 9px;
+    cursor: pointer;
+}

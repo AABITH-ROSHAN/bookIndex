@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Index</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tot">
+        <h1 class="headtitle">BOOK INDEX</h1>
+        <button onclick="showit()" class="show">Show</button>
+    </div>
+     
+    <div class="container" id="container">
+        <div class="booktitled">
+            <h2>JUNGLE BOOK</h2>
+            <h3>-Rudyard Kipling </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia vero at? Rem sit animi officiis iste molestias quia vitae, excepturi, cupiditate ipsa, possimus quaerat sapiente ratione autem architecto veniam.</p>
+            <button onclick="closeit(this)" class="close">Delete</button>
+        </div>
+    </div>
+
+    <div class="newpopupcont"></div>
+        <div class="newpopup">
+            <h1>Fill The Blanks</h1> <hr class="hrr">
+            <form>
+                <input type="text" placeholder="Book Title" id="title">
+                <input type="text" placeholder="Author Name" id="authorname">
+                <textarea placeholder="Description" id="description"></textarea>
+                <button onclick="add(event)" class="addd">Add</button>
+                <button onclick="cancel(event)" class="cancel">Cancel</button>
+            </form> 
+        </div>
+    
+    <div class="boxaddpop">
+            <button onclick="addpop()" class="addpopup" id="addingpop">+</button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
